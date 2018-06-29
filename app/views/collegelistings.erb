@@ -1,0 +1,206 @@
+<style>
+html {
+  background: url(https://i0.wp.com/www.solidcolore.com/3840/ffe2f1_background.jpg?ssl=1) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+</style>
+
+<% if !@choice.nil? %>
+<h1>Majors</h1>
+
+<%if @choice.downcase == "business"%>
+<h2>Here's where you should go for a Business major</h2>
+<% businessColleges = bestMajor("business") %>
+<% businessColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "engineering"%>
+<h2>Here's where you should go for a Engineering major</h2>
+<% engineeringColleges = bestMajor("engineering") %>
+<% engineeringColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "law"%>
+<h2>Here's where you should go for a Law major</h2>
+<% lawColleges = bestMajor("law") %>
+<% lawColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "tech"%>
+<h2>Here's where you should go for a Tech major</h2>
+<% techColleges = bestMajor("tech") %>
+<% techColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "social science"%>
+<h2>Here's where you should go for a Social Science major</h2>
+<% socialscienceColleges = bestMajor("social science") %>
+<% socialscienceColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "science"%>
+<h2>Here's where you should go for a Science major</h2>
+<% scienceColleges = bestMajor("science") %>
+<% scienceColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "economics"%>
+<h2>Here's where you should go for an Economics major</h2>
+<% economicsColleges = bestMajor("economics") %>
+<% economicsColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "history"%>
+<h2>Here's where you should go for a History major</h2>
+<% historyColleges = bestMajor("history") %>
+<% historyColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "management"%>
+<h2>Here's where you should go for a Management major</h2>
+<% managementColleges = bestMajor("management") %>
+<% managementColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "marketing"%>
+<h2>Here's where you should go for a Marketing major</h2>
+<% marketingColleges = bestMajor("marketing") %>
+<% marketingColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "psychology"%>
+<h2>Here's where you should go for a Psychology major</h2>
+<% psychologyColleges = bestMajor("psychology") %>
+<% psychologyColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "education"%>
+<h2>Here's where you should go for a Teaching/Education major</h2>
+<% educationColleges = bestMajor("education") %>
+<% educationColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "architecture"%>
+<h2>Here's where you should go for a Architecture major</h2>
+<% architectureColleges = bestMajor("architecture") %>
+<% architectureColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "dentistry"%>
+<% dentistryColleges = bestMajor("dentistry") %>
+<% dentistryColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "communication"%>
+<h2>Here's where you should go for a Communication major</h2>
+<% communicationColleges = bestMajor("communication") %>
+<% communicationColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "computer science"%>
+<h2>Here's where you should go for a Computer science/engineering major</h2>
+<% computerscienceColleges = bestMajor("computer science") %>
+<% computerscienceColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "political science"%>
+<h2>Here's where you should go for a Political Science/Government major</h2>
+<% politicalscienceColleges = bestMajor("political science") %>
+<% politicalscienceColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "med"%>
+<h2>Here's where you should go for a Medical major</h2>
+<% medColleges = bestMajor("med") %>
+<% medColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "art"%>
+<h2>Here's where you should go for an Art major</h2>
+<% artColleges = bestMajor("art") %>
+<% artColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice.downcase == "journalism"%>
+<% journalismColleges = bestMajor("journalism") %>
+<% journalismColleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%end%>
+<%end%>
+
+
+
+
+
+
+
+<!--<h2>Here's where you should go for a Technology major</h2>-->
+<!--<ul>-->
+<!--<li>#{college19}</li>-->
+<!--<li>#{college24}</li>-->
+<!--</ul>-->

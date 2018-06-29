@@ -1,0 +1,180 @@
+<style>
+html {
+  background: url(https://i0.wp.com/www.solidcolore.com/3840/ffe2f1_background.jpg?ssl=1) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+</style>
+
+<h1>Movies</h1>
+
+<%if @choice.downcase == "comedy"%>
+    <h2>Comedy</h2>
+    <ul>
+        <li>Girls Trip</li>
+        <li>Are We There Yet?</li>
+        <li>Lady Bird</li>
+        <li>The Emoji Movie</li>
+        <li>Boss Baby</li>
+        <li>Paul Bart: Mall Cop</li>
+        <li>The Big Stick</li>
+        <li>Landline </li>
+        <li>The Incredible Jessica James</li>
+        <li>Daddy's Home 2</li>
+    </ul>
+
+<a href="https://editorial.rottentomatoes.com/guide/100-essential-comedy-movies/2/">More Comedy Movies</a>
+
+ <%elsif @choice.downcase == "mystery"%>
+     <h2>Mystery</h2>
+    <ul>
+        <li>Inception</li>
+        <li>Interstellar</li>
+        <li>Kidnap</li>
+        <li>Mother!</li>
+        <li>Atomic Blonde</li>
+        <li>Wind River</li>
+        <li>Get Out</li>
+        <li>The Shape of Water</li>
+        <li>Before I Fall</li>
+        <li>Happy Death Day</li>
+    </ul>
+
+<a href="https://www.rottentomatoes.com/top/bestofrt/top_100_mystery__suspense_movies/">More Mystery Movies</a>
+
+ <%elsif @choice.downcase == "drama"%>
+     <h2>Drama</h2>
+    <ul>
+        <li>Dunkrik</li>
+        <li>Call Me By My Name</li>
+        <li>Boyhood</li>
+        <li>Mute</li>
+        <li>To The Bone</li>
+        <li>Frist Match</li>
+        <li>6 Balloons</li>
+        <li>The Irishman</li>
+        <li>Okja</li>
+        <li>The Imitation Game</li>
+    </ul>
+
+<a href="https://www.rottentomatoes.com/top/bestofrt/top_100_drama_movies/">More Drama Movies</a>
+
+ <%elsif @choice.downcase == "action"%>
+     <h2>Action</h2>
+    <ul>
+        <li>Avengers: Infinity War</li>
+        <li>Game Over, Man!</li>
+        <li>Wheelman</li>
+        <li>Bright</li>
+        <li>Spctral</li>
+        <li>Annihilation</li>
+        <li>The Dark Knight</li>
+        <li>Taken</li>
+        <li>Skyfall</li>
+        <li>Gladitor</li>
+    </ul>
+
+<a href="https://editorial.rottentomatoes.com/guide/100-best-fresh-action-movies/">More Action Movies</a>
+
+ <%elsif @choice.downcase == "sci-fi" || @choice.downcase == "science fiction"%>
+     <h2>Sci-Fi</h2>
+    <ul>
+        <li>The Terminator</li>
+        <li>The CloverField Paradox</li>
+        <li>Advantageous</li>
+        <li>The Titan</li>
+        <li>What Happened</li>
+        <li>ARQ</li>
+        <li>What Happened to Monday</li>
+        <li>Avatar</li>
+        <li>Distict 9</li>
+    </ul>
+
+<a href="https://editorial.rottentomatoes.com/guide/best-sci-fi-movies-of-all-time/2/">More Science Fiction Movies</a>
+
+ <%else%>
+     <h2>Comedy</h2>
+    <ul>
+        <li>Girls Trip</li>
+        <li>Are We There Yet?</li>
+        <li>Lady Bird</li>
+        <li>The Emoji Movie</li>
+        <li>Boss Baby</li>
+        <li>Paul Bart: Mall Cop</li>
+        <li>The Big Stick</li>
+        <li>Landline </li>
+        <li>The Incredible Jessica James</li>
+        <li>Daddy's Home 2</li>
+    </ul>
+
+<a href="https://editorial.rottentomatoes.com/guide/100-essential-comedy-movies/2/">More Comedy Movies</a>
+
+    <h2>Mystery</h2>
+    <ul>
+        <li>Inception</li>
+        <li>Interstellar</li>
+        <li>Kidnap</li>
+        <li>Mother!</li>
+        <li>Atomic Blonde</li>
+        <li>Wind River</li>
+        <li>Get Out</li>
+        <li>The Shape of Water</li>
+        <li>Before I Fall</li>
+        <li>Happy Death Day</li>
+    </ul>
+
+<a href="https://www.rottentomatoes.com/top/bestofrt/top_100_mystery__suspense_movies/">More Mystery Movies</a>
+
+     <h2>Drama</h2>
+    <ul>
+        <li>Dunkrik</li>
+        <li>Call Me By My Name</li>
+        <li>Boyhood</li>
+        <li>Mute</li>
+        <li>To The Bone</li>
+        <li>Frist Match</li>
+        <li>6 Balloons</li>
+        <li>The Irishman</li>
+        <li>Okja</li>
+        <li>The Imitation Game</li>
+    </ul>
+
+<a href="https://www.rottentomatoes.com/top/bestofrt/top_100_drama_movies/">More Drama Movies</a>
+
+    <h2>Action</h2>
+    <ul>
+        <li>Avengers: Infinity War</li>
+        <li>Game Over, Man!</li>
+        <li>Wheelman</li>
+        <li>Bright</li>
+        <li>Spctral</li>
+        <li>Annihilation</li>
+        <li>The Dark Knight</li>
+        <li>Taken</li>
+        <li>Skyfall</li>
+        <li>Gladitor</li>
+    </ul>
+
+<a href="https://editorial.rottentomatoes.com/guide/100-best-fresh-action-movies/">More Action Movies</a>
+
+    <h2>Sci-Fi</h2>
+    <ul>
+        <li>The Terminator</li>
+        <li>The CloverField Paradox</li>
+        <li>Advantageous</li>
+        <li>The Titan</li>
+        <li>What Happened</li>
+        <li>ARQ</li>
+        <li>What Happened to Monday</li>
+        <li>Avatar</li>
+        <li>Distict 9</li>
+    </ul>
+
+<a href="https://editorial.rottentomatoes.com/guide/best-sci-fi-movies-of-all-time/2/">More Science Fiction Movies</a>
+
+<a href="https://editorial.rottentomatoes.com/">Find More Movies!</a>
+
+<%end%>

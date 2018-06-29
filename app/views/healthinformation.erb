@@ -1,0 +1,95 @@
+<style>
+html {
+  background: url(https://i0.wp.com/www.solidcolore.com/3840/ffe2f1_background.jpg?ssl=1) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+</style>
+
+<font size="40"><center><h1>Help!</h1></center></font>
+
+<%if @choice.downcase == "sad"%>
+    <h2>Sad</h2>
+     <a href="https://www.wikihow.com/Get-Happy-when-You%27re-Sad">Steps to take when you are sad</a>
+
+
+
+     <h3>Science Behind Saddness </h3>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/QGdHJSIr1Z0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <h3>Identify How You Are Feeling</h3>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/bCI68IfY0D8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+ <%elsif @choice.downcase == "happy"%>
+    <center><h2>Happy</h2>
+    <img src="https://vignette.wikia.nocookie.net/mrmen/images/f/fe/Mr._Happy.png/revision/latest?cb=20170202192617" alt="Trulli" width="500" height="333">
+     <h3>Science Behind Happiness</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B19g3oXTD5I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hsPpaHbvfQs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   <h3>How To Keep Being Happy</h3>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/78nsxRxbf4w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   <h3>Check Out Our Meme Page:</h3>
+<a href="http://ruby-3-chrischelleee.c9users.io:8080/memes">CLICK FOR MEMES</a>
+   </center>
+
+ <%elsif @choice.downcase == "depressed"%>
+    <h2>Depression</h2>
+    <a href="http://ruby-3-chrischelleee.c9users.io:8080/suicide">IF YOU NEED IMMEDIATE HELP CLICK HERE!</a>
+    <p>
+
+         </p>
+    <a href="https://www.helpguide.org/articles/depression/coping-with-depression.htm">Steps to take when you are depressed</a>
+    <p>
+
+
+    </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CfvYlWG1cA0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+     <h3>Science Behind Depression</h3>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/bCI68IfY0D8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GOK1tKFFIQI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+ <%elsif @choice.downcase == "mad"|| @choice.downcase == "angry"%>
+    <h2>Mad & Angry</h2>
+    <a href="http://www.thehotline.org/2014/01/30/seeing-red-how-to-cool-off-when-youre-angry/">Steps to take when you are mad </a>
+    <h3>Management Techniques</h3>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/BsVq5R_F6RA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <h3>Science Behind being Mad/Angry</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d_5DU5opOFk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+  <%elsif @choice.downcase == "suicide" || @choice.downcase == "suicidal" || @choice.downcase == "kill myself" || @choice.downcase == "i want to kill myself" || @choice.downcase == "hurt myself"%>
+   <center>
+   <a href="http://ruby-3-chrischelleee.c9users.io:8080/suicide">FOR IMMEDIATE HELP CLICK HERE!</a>
+   <div>
+   <img src="https://media.giphy.com/media/HUSyHxwWzZqJG/giphy.gif" height="450" width="450">
+   </div>
+   <img src="https://media1.giphy.com/media/26gskaXMHwQFmuXAc/giphy.gif" height="450" width="450">
+   </center>
+
+   <%elsif @choice.downcase == "anxious" || @choice.downcase == "worried"%>
+   <center>
+   <h2>Anxiety</h2>
+   <h3>Teen Anxiety Hotline: 1-800-448-3000</h3>
+   <p>
+
+
+   </p>
+   <h3>Take a Break and Slow Down</h3>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/ktSxaPFsmvI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   <h3>Calm Down During a Panic Attack</h3>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/IAODG6KaNBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4QHGYTP5HsE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   </center>
+ <%else%>
+     <a href="https://www.mentalhealth.gov/basics">Basic Information</a>
+<%end%>

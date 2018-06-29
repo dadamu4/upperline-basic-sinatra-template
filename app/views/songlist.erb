@@ -1,0 +1,131 @@
+<style>
+html {
+  background: url(https://i0.wp.com/www.solidcolore.com/3840/ffe2f1_background.jpg?ssl=1) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+</style>
+
+<h1>Songs</h1>
+
+<%if @choice.downcase == "hip-hop" || @choice.downcase == "r&b" || @choice.downcase == "hip hop" %>
+    <h2>Hip-Hop and R&B</h2>
+    <ul>
+        <li>Boo'd Up by Ella Mai</li>
+        <li>Nice for What by Drake </li>
+        <li>This is America by Chilish Gambino</li>
+        <li>I Like It by Cardi B</li>
+        <li>Chun-Li by Nicki Minaj</li>
+        <li>Be Careful by Cardi B</li>
+        <li>Walk It Talk it by Migos </li>
+        <li>LOVE by Kendrick Lamar</li>
+        <li>Super Bass by Nicki Minaj</li>
+        <li>Poetic Justice by Kendrick Lamar</li>
+    </ul>
+
+<a href="https://www.billboard.com/charts/r-b-hip-hop-songs">More Hip-Hop Songs</a>
+<a href="https://www.billboard.com/charts/r-and-b-songs">More R&B Songs</a>
+
+ <%elsif @choice.downcase == "classical"%>
+    <h2>Classical</h2>
+    <ul>
+        <li>Sonata No. 17 in C by Mozart </li>
+        <li>The Marriage of Figaro by Mozart </li>
+        <li>Ruslan and Ludmilla by Glinka </li>
+        <li>Holberg Suite by Grieg </li>
+        <li>Jupiter the Bringer of Jollity by Holst</li>
+    </ul>
+
+<a href="https://www.allmusic.com/style/classical-ma0000002521/songs">More Classical Songs</a>
+
+ <%elsif @choice.downcase == "pop"%>
+    <h2>Pop</h2>
+    <ul>
+        <li>Passionfruit by Drake</li>
+        <li>Shape of you by Ed Sheeran</li>
+        <li>That is what I like by Buno Mars</li>
+        <li>Love on the brain by Rihanna </li>
+        <li>Side to Side by Arianna Grande</li>
+        <li>24k Magic by Buno Mars</li>
+        <li>Girls like you by Maroon  </li>
+        <li>Perfect by Ed Sheeran </li>
+        <li>Just he way you are by Buno Mars</li>
+        <li>Nothin'on you by Buno Mars </li>
+    </ul>
+
+<a href="https://www.billboard.com/charts/pop-songs">More Pop Songs</a>
+
+ <%elsif @choice.downcase == "jazz"%>
+    <h2>Jazz</h2>
+    <ul>
+        <li>Take Five by Dave Brubeck </li>
+        <li>What a Wonderful World by Louis Armstrong </li>
+        <li>Acknowledgment by John Coltrane Quartet</li>
+        <li>My Favorite Things by Dave Brubeck </li>
+        <li>All Blues by Kenny Burrell</li>
+    </ul>
+
+<a href="https://www.billboard.com/charts/jazz-songs">More Jazz Songs</a>
+
+ <%else%>
+    <h2>Hip-Hop and R&B</h2>
+    <ul>
+        <li>Boo'd Up by Ella Mai</li>
+        <li>Nice for What by Drake </li>
+        <li>This is America by Chilish Gambino</li>
+        <li>I Like It by Cardi B</li>
+        <li>Chun-Li by Nicki Minaj</li>
+        <li>Be Careful by Cardi B</li>
+        <li>Walk It Talk it by Migos </li>
+        <li>LOVE by Kendrick Lamar</li>
+        <li>Super Bass by Nicki Minaj</li>
+        <li>Poetic Justice by Kendrick Lamar</li>
+    </ul>
+
+<a href="https://www.billboard.com/charts/r-b-hip-hop-songs">More Hip-Hop Songs</a>
+<a href="https://www.billboard.com/charts/r-and-b-songs">More R&B Songs</a>
+
+    <h2>Classical</h2>
+    <ul>
+        <li>Sonata No. 17 in C by Mozart </li>
+        <li>The Marriage of Figaro by Mozart </li>
+        <li>Ruslan and Ludmilla by Glinka </li>
+        <li>Holberg Suite by Grieg </li>
+        <li>Jupiter the Bringer of Jollity by Holst</li>
+    </ul>
+
+<a href="https://www.allmusic.com/style/classical-ma0000002521/songs">More Classical Songs</a>
+
+    <h2>Pop</h2>
+    <ul>
+        <li>Passionfruit by Drake</li>
+        <li>Shape of you by Ed Sheeran</li>
+        <li>That is what I like by Buno Mars</li>
+        <li>Love on the brain by Rihanna </li>
+        <li>Side to Side by Arianna Grande</li>
+        <li>24k Magic by Buno Mars</li>
+        <li>Girls like you by Maroon  </li>
+        <li>Perfect by Ed Sheeran </li>
+        <li>Just he way you are by Buno Mars</li>
+        <li>Nothin'on you by Buno Mars </li>
+    </ul>
+
+<a href="https://www.billboard.com/charts/pop-songs">More Pop Songs</a>
+
+    <h2>Jazz</h2>
+    <ul>
+        <li>Take Five by Dave Brubeck </li>
+        <li>What a Wonderful World by Louis Armstrong </li>
+        <li>Acknowledgment by John Coltrane Quartet</li>
+        <li>My Favorite Things by Dave Brubeck </li>
+        <li>All Blues by Kenny Burrell</li>
+    </ul>
+
+<a href="https://www.billboard.com/charts/jazz-songs">More Jazz Songs</a>
+<a href="https://www.pandora.com/">Find More Songs!</a>
+
+
+<%end%>

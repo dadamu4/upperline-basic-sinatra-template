@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 200;
+    padding: 500;
+    overflow: hidden;
+    background-color: #000;
+    text-align: center;
+
+}
+
+li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #999;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="highschool">High School</a></li>
+  <li><a href="college">College</a></li>
+  <li><a href="entertainment">Entertainment</a></li>
+  <li><a href="health">Mental Health</a></li>
+</ul>
+
+</body>
+</html>
+
+<style>
+html {
+  background: url(https://i0.wp.com/www.solidcolore.com/3840/ffe2f1_background.jpg?ssl=1) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+</style>
+
+<h1> Take a break! </h1>
+
+<h2> Type in a genre and choose a movie from the list! </h2>
+
+<form method="POST" action="/movielist">
+  <p> Movie Genre: <input type="text" name="genre"></p>
+  <input type="submit">
+
+</form>
+
+
+<h2> Type in a genre and choose a book from the list! </h2>
+
+<form method="POST" action="/booklist">
+  <p> Book Genre: <input type="text" name="genre"></p>
+  <input type="submit">
+
+</form>
+
+<h2> Type in a genre and choose a song from the list! </h2>
+
+<form method="POST" action="/songlist">
+  <p> Music Genre: <input type="text" name="genre"></p>
+  <input type="submit">
+
+</form>
+
+<h2>Or just laugh at memes!</h2>
+<a href="http://ruby-3-chrischelleee.c9users.io:8080/memes">Memes</a>
+
+<style>
+h1 = {color :red;}
+a = {color :blue;}
+
+</style>

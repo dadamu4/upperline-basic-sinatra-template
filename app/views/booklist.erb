@@ -1,0 +1,186 @@
+<style>
+html {
+  background: url(https://i0.wp.com/www.solidcolore.com/3840/ffe2f1_background.jpg?ssl=1) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+</style>
+
+
+
+<h1>Books</h1>
+
+<%if @choice.downcase == "fantasy" %>
+<h2>Fantasy</h2>
+<ul>
+    <li>Harry Potter</li>
+    <li>The Chronicles of Narnia</li>
+    <li>The Hobbit</li>
+    <li>The Lord of the Rings</li>
+    <li>The Way of the Kings</li>
+    <li>The Chronicles of Narnia</li>
+    <li>American Gods</li>
+    <li>Alice's Adventures in Wonderland</li>
+    <li>A Clash of Kings</li>
+    <li>The Fellowship of the Kings</li>
+</ul>
+
+<a href="https://www.goodreads.com/genres/fantasy">More Fantasy Books</a>
+
+<%elsif @choice.downcase == "mystery" || @choice.downcase == "thriller" || @choice.downcase == "mystery/thriller" %>
+<h2>Mystery/Thriller</h2>
+<ul>
+    <li>The Adventures of Sherlock Holmes</li>
+    <li>And Then There Were None</li>
+    <li>Rebecca </li>
+    <li>Gone Girl</li>
+    <li>The President is Missing</li>
+    <li>The Fallen</li>
+    <li>In a Dark Wood</li>
+    <li>Killing Floor</li>
+    <li>Before I Go to Sleep</li>
+    <li>The Dry</li>
+</ul>
+
+<a href="https://www.goodreads.com/genres/mystery">More Mystery Books</a>
+<a href="https://www.goodreads.com/genres/thriller">More Thriller Books</a>
+
+<%elsif @choice.downcase == "romance"%>
+<h2>Romance</h2>
+<ul>
+    <li>Outlander</li>
+    <li>Bared to You </li>
+    <li>Beautiful Disaster</li>
+    <li>Pride and Prejudice </li>
+    <li>Love Story </li>
+    <li>Eleanor and Park</li>
+    <li>Dark Lover</li>
+    <li>Me Before You</li>
+    <li>The Fault In Our Stars</li>
+    <li>The Notebook</li>
+</ul>
+
+<a href="https://www.goodreads.com/genres/romance">More Romance Books</a>
+
+<%elsif @choice.downcase == "drama"%>
+<h2>Drama</h2>
+<ul>
+    <li>Romeo and Juliet</li>
+    <li>Hamlet</li>
+    <li>Macbeth</li>
+    <li>To Kill a Mockingbird</li>
+    <li>The Glass Menagerie </li>
+    <li>The Book Thief</li>
+    <li>A Rasin in the Sun</li>
+    <li>Julius Ceaser</li>
+    <li>A Doll's House</li>
+    <li>The Tempest</li>
+</ul>
+
+<a href="https://www.goodreads.com/genres/drama">More Drama Books</a>
+
+<%elsif @choice.downcase == "sci-fi" || @choice.downcase == "science fiction" || @choice.downcase == "sci fi"%>
+<h2>Science Fiction</h2>
+<ul>
+    <li>Dune</li>
+    <li>Ender's Game</li>
+    <li>Fahrenheit 451</li>
+    <li>Brave New World</li>
+    <li>The Time Machine</li>
+    <li>The Left Hand of Darkness</li>
+    <li>The Forever War</li>
+    <li>Snow Crash</li>
+    <li>Frankenstein</li>
+    <li>Hyperion</li>
+</ul>
+
+<a href="https://www.goodreads.com/genres/science-fiction">More Science Fiction Books</a>
+
+<%else%>
+    <h2>Fantasy</h2>
+<ul>
+    <li>Harry Potter</li>
+    <li>The Chronicles of Narnia</li>
+    <li>The Hobbit</li>
+    <li>The Lord of the Rings</li>
+    <li>The Way of the Kings</li>
+    <li>The Chronicles of Narnia</li>
+    <li>Amerian Gods</li>
+    <li>Alice's Adventures in Wonderland</li>
+    <li>A Clash of Kings</li>
+    <li>The Fellowship of the Kings</li>
+</ul>
+
+<a href="https://www.goodreads.com/genres/fantasy">More Fantasy Books</a>
+
+<h2>Mystery/Thriller</h2>
+<ul>
+    <li>The Adventures of Sherlock Holmes</li>
+    <li>And Then There Were None</li>
+    <li>Rebecca </li>
+    <li>Gone Girl</li>
+    <li>The President is Missing</li>
+    <li>The Fallen</li>
+    <li>In a Dark Wood</li>
+    <li>Killing Floor</li>
+    <li>Before I Go to Sleep</li>
+    <li>The Dry</li>
+</ul>
+
+<a href="https://www.goodreads.com/genres/mystery">More Mystery Books</a>
+<a href="https://www.goodreads.com/genres/thriller">More Thriller Books</a>
+
+<h2>Romance</h2>
+<ul>
+    <li>Outlander</li>
+    <li>Bared to You </li>
+    <li>Beautiful Disaster</li>
+    <li>Pride and Prejudice </li>
+    <li>Love Story </li>
+    <li>Eleanor and Park</li>
+    <li>Dark Lover</li>
+    <li>Me Before You</li>
+    <li>The Fault In Our Stars</li>
+    <li>The Notebook</li>
+</ul>
+
+<a href="https://www.goodreads.com/genres/romance">More Romance Books</a>
+
+<h2>Drama</h2>
+<ul>
+    <li>Romeo and Juliet</li>
+    <li>Hamlet</li>
+    <li>Macbeth</li>
+    <li>To Kill a Mockingbird</li>
+    <li>The Glass Menagerie </li>
+    <li>The Book Thief</li>
+    <li>A Rasin In the Sun</li>
+    <li>Julius Ceaser</li>
+    <li>A Doll's House</li>
+    <li>The Tempest</li>
+</ul>
+
+<a href="https://www.goodreads.com/genres/drama">More Drama Books</a>
+
+<h2>Science Fiction</h2>
+<ul>
+    <li>Dune</li>
+    <li>Ender's Game</li>
+    <li>Fahrenheit 451</li>
+    <li>Brave New World</li>
+    <li>The Time Machine</li>
+    <li>The Left Hand of Darkness</li>
+    <li>The Forever War</li>
+    <li>Snow Crash</li>
+    <li>Frankenstein</li>
+    <li>Hyperion</li>
+</ul>
+
+<a href="https://www.goodreads.com/genres/science-fiction">More Science Fiction Books</a>
+
+<a href="https://www.goodreads.com/genres">Find More Books!</a>
+
+<%end%>

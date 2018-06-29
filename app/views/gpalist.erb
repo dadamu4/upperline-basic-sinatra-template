@@ -1,0 +1,118 @@
+<style>
+html {
+  background: url(https://i0.wp.com/www.solidcolore.com/3840/ffe2f1_background.jpg?ssl=1) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+</style>
+<h1>GPA</h1>
+
+<%if @choice == "4.6"%>
+<h2>Here's where you should go with a 4.6 (or any school further down with a GPA below yours!)</h2>
+<% colleges46 = bestGPA("4.6") %>
+<% colleges46.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+
+<%elsif @choice == "4.3"%>
+<h2>Here's where you should go with a 4.3 (or any school further down with a GPA below yours!)</h2>
+<% _43_Colleges = bestGPA("4.3") %>
+<% _43_Colleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice == "4.2"%>
+<h2>Here's where you should go with a 4.2 (or any school further down with a GPA below yours!)</h2>
+<% _42_Colleges = bestGPA("4.2") %>
+<% _42_Colleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice == "4.1"%>
+<h2>Here's where you should go with a 4.1 (or any school further down with a GPA below yours!)</h2>
+<% _41_Colleges = bestGPA("4.1") %>
+<% _41_Colleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice == "4.0"%>
+<h2>Here's where you should go with a 4.0 (or any school further down with a GPA below yours!)</h2>
+<% _40_Colleges = bestGPA("4.0") %>
+<% _40_Colleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice == "3.9"%>
+<h2>Here's where you should go with a 3.9 (or any school further down with a GPA below yours!)</h2>
+<% _39_Colleges = bestGPA("3.9") %>
+<% _39_Colleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+
+<%elsif @choice == "3.8"%>
+<h2>Here's where you should go with a 3.8 (or any school further down with a GPA below yours!)</h2>
+<% _38_Colleges = bestGPA("3.8") %>
+<% _38_Colleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice == "3.7"%>
+<h2>Here's where you should go with a 3.7 (or any school further down with a GPA below yours!)</h2>
+<% _37_Colleges = bestGPA("3.7") %>
+<% _37_Colleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice == "3.6"%>
+<h2>Here's where you should go with a 3.6 (or any school further down with a GPA below yours!)</h2>
+<% _36_Colleges = bestGPA("3.6") %>
+<% _36_Colleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice == "3.5"%>
+<h2>Here's where you should go with a 3.5 (or any school further down with a GPA below yours!)</h2>
+<% _35_Colleges = bestGPA("3.5") %>
+<% _35_Colleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%elsif @choice == "3.4"%>
+<h2>Here's where you should go with a 3.4</h2>
+<%_34_Colleges = bestGPA("3.4") %>
+<% _34_Colleges.each do |college| %>
+    <ul>
+        <li> <%=college %> </li>
+    </ul>
+<% end %>
+
+<%else%>
+<h2>If your GPA is 3.3 or below AND you want to go to one of the top 50 schools then follow the link for tips about how to bring it up!</h2>
+<a href="https://ruby-3-chrischelleee.c9users.io/highschool">Bring Up Your GPA!</a>
+
+<%end%>
